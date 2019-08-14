@@ -13,8 +13,8 @@ def main(count, min_value, max_value):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("count", type=int)
-    parser.add_argument("min", type=int)
-    parser.add_argument("max", type=int)
+    parser.add_argument("min", type=int, help="(Inclusive)")
+    parser.add_argument("max", type=int, help="(Inclusive)")
 
     args = parser.parse_args()
 
